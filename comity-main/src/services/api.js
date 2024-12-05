@@ -1,7 +1,7 @@
 import axios from "axios";
 import { KEY_ACCESS_TOKEN, getItem } from "../utils/localStorageManager";
 
-const BASE_URL = process.env.REACT_APP_BACKEND_BASE_URL;
+const BASE_URL = "https://comity-backend.onrender.com";
 
 axios.interceptors.request.use(req => {
     try {

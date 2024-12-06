@@ -37,7 +37,9 @@ const FourthBlock = ({ goToContact }) => {
             maxWidth: 450,
             textAlign: 'center'
         }} >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        J-18 , J-Scheme, Bapuji Marg, Sahkar Marg,
+Opp. NAV Back, Jaipur 302005, Rajasthan India
+
         </Typography>
 
         <Button onClick={goToContact} sx={{

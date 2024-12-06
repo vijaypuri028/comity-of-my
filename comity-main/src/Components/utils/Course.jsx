@@ -13,7 +13,7 @@ const Course = () => {
 
     const course = {
       title: 'HSRT',
-      tag: 'HUNNAR SE ROZGAR TAK',
+      tag: 'Hunar Se Rozgar Tak',
       desc: ['In the year 2009-10, the Ministry of Tourism (MoT) launched a special initiative called “Hunar Se Rozgar Tak” (HSRT) for creation of employable skills amongst youth specific to Hospitality and Tourism Sector'],
       about: ['Skill Development: To provide short-term training to create a skilled workforce in the hospitality and tourism sectors.', 'Employment Generation: To enhance employment opportunities for the youth, especially from economically weaker sections.', 'Quality Improvement: To improve the quality of services in the hospitality and tourism industry.'],
       link: '',

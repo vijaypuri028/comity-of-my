@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Box, Button, Card, Typography } from "@mui/material";
-import { greenColor, navyLogoColor, redColor } from "../../../Common/constants";
+import { greenColor, navyLogoColor, redColor,grayBorderColor } from "../../../Common/constants";
 import ContactContext from "../../../context/admin/contactContext";
 
 const FONT_SIZE = 18;
@@ -42,23 +42,32 @@ const ContactCard = ({ contact }) => {
       >
         <Typography component="span">Select your type :</Typography>
 
-        {contact.type == "phone" ? (
-          <Typography
-            style={{
-              color: greenColor,
-            }}
-          >
-            Phone
-          </Typography>
-        ) : (
-          <Typography
-            style={{
-              color: redColor,
-            }}
-          >
-            Address
-          </Typography>
-        )}
+        {contact.type === "phone" ? (
+  <Typography
+    style={{
+      color: greenColor,
+    }}
+  >
+    Phone
+  </Typography>
+) : contact.type === "email" ? (
+  <Typography
+    style={{
+      color: grayBorderColor, // Define a color for email, e.g., blueColor
+    }}
+  >
+    Email
+  </Typography>
+) : (
+  <Typography
+    style={{
+      color: redColor,
+    }}
+  >
+    Address
+  </Typography>
+)}
+
       </Box>
 
       <Typography>

@@ -10,7 +10,7 @@ export const projects = [
     {
         id: 1,
         title: 'HSRT',
-        tag: 'HUNNAR SE ROZGAR TAK',
+        tag: 'Hunar Se Rozgar Tak',
         desc: 'In the year 2009-10, the Ministry of Tourism (MoT) launched a special initiative called “Hunar Se Rozgar Tak” (HSRT) for creation of employable skills amongst youth specific to Hospitality and Tourism Sector',
         link: '',
         img: hsrt

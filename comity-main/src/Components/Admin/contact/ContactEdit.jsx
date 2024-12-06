@@ -134,6 +134,20 @@ const ContactEdit = () => {
               }
               label="Address"
             />
+            <FormControlLabel
+          value={"email"}
+          control={
+            <Radio
+              sx={{
+                color: grayBorderColor,
+                "&.Mui-checked": {
+                  color: grayBorderColor,
+                },
+              }}
+            />
+          }
+          label="Email"
+        />
           </RadioGroup>
           
         {/* Edit Content Section */}

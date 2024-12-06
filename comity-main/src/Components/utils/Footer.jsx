@@ -6,7 +6,7 @@ import logo from "../../Common/images/logos/comityCrop.png";
 // import ContactContext from "../../context/admin/contactContext";
 import useApi from "../../Hooks/useApi";
 import { apiContactUrl } from "../../services/api.url";
-import React,{  useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import SocialMediaContext from "../../context/admin/socialMediaContext";
 
 // Social Media Photos
@@ -18,21 +18,22 @@ import linkedin from '../../Common/images/socialIcons/linkedin.png'
 import linkedinActive from '../../Common/images/socialIcons/linkedinActive.png'
 
 // Contact icons
-import { LocationOn, PhoneAndroid } from "@mui/icons-material";
+import { LocationOn, PhoneAndroid,Email } from "@mui/icons-material";
 import ContactContext from "../../context/admin/contactContext";
 
 
 const Footer = () => {
 
   const socialIcons = (item) => {
-    if(item.type === 'facebook') return {img: facebook, activeImg: facebookActive}
-    else if(item.type === 'instagram') return {img: instagram, activeImg: instagramActive}
-    else if(item.type === 'linkedin') return {img: linkedin, activeImg: linkedinActive}
+    if (item.type === 'facebook') return { img: facebook, activeImg: facebookActive }
+    else if (item.type === 'instagram') return { img: instagram, activeImg: instagramActive }
+    else if (item.type === 'linkedin') return { img: linkedin, activeImg: linkedinActive }
   }
 
   const contactIcons = (contactType) => {
     if (contactType === "phone") return <PhoneAndroid />;
     if (contactType === "address") return <LocationOn />;
+    if (contactType === "email") return <Email />;
   }
 
   const { getAllSocialMedia, allSocialMedias } = useContext(SocialMediaContext);
@@ -85,8 +86,9 @@ const Footer = () => {
         <img src={logo} alt="" />
         <Typography variant="h6">Comity Edutech</Typography>
         <Typography>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          <div>
+            Harmony for Excellence!
+          </div>
         </Typography>
 
         {/* Social Media Section */}

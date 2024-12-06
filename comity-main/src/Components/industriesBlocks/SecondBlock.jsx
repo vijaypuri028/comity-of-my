@@ -48,7 +48,7 @@ const SecondBlock = ({ allShowIndustries }) => {
           <TableHead>
             <TableRow>
               <TableCell sx={{ fontWeight: "bold", color: "#333" }}>
-                Industry Name
+              Project - Hunar Se Rozgar Tak
               </TableCell>
               <TableCell sx={{ fontWeight: "bold", color: "#333" }}>
                 Action

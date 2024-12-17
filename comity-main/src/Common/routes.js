@@ -40,9 +40,9 @@ export const navRoutes = [
         showThis: true
     },
     {
-        name: 'industries',
-        path: '/industries',
-        title: 'Industries',
+        name: 'ourinitiative',
+        path: '/ourinitiative',
+        title: 'Our Initiative',
         showThis: true
     },
     {

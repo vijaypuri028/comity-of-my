@@ -22,7 +22,7 @@ function App() {
 
   const loadPage = (name) => {
     if(name === 'home') return Home;
-    else if(name === 'industries') return Industries;
+    else if(name === 'ourinitiative') return Industries;
     else if(name === 'capabilities') return Capabilities;
     else if(name === 'about') return About;
     else if(name === 'careers') return Carriers;

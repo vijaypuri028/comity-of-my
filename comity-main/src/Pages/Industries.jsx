@@ -5,6 +5,7 @@ import SecondBlock from '../Components/industriesBlocks/SecondBlock'
 import Footer from '../Components/utils/Footer'
 import { useContext } from 'react'
 import industryContext from '../context/admin/industryContext'
+import ProjectSection from '../Components/homeBlocks/ProjectSection'
 
 const Industries = () => {
 
@@ -22,6 +23,9 @@ const Industries = () => {
     title={"Comity Edutech and you"}
     tagLine={"Working together to deliver value to your business."} 
     />
+    <ProjectSection marginTop={"80px"} width={"100%"} />
+
+
     <FirstBlock allShowIndustries={allShowIndustries} />
     <SecondBlock allShowIndustries={allShowIndustries} />
 

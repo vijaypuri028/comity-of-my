@@ -115,7 +115,7 @@ const SecondBlock = () => {
                     <Typography sx={{
                         color: navyTextColor
                     }} >
-                    - Vaibhav gupta (to Director)
+                    - Vaibhav gupta (Director)
                     </Typography>
                 </Box>
             </CardContent>

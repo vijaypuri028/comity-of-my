@@ -1,19 +1,29 @@
-import { Carousel } from 'antd'
-import Project from '../utils/Project'
-import { projects } from '../../Common/projectData'
+import { Carousel } from 'antd';
+import HSRT from '../utils/HSRT';
+import PMFME from '../utils/PMFME';
+import FOSTAC from '../utils/FOSTAC';
 
-const ProjectSection = () => {
+const ProjectSection = ({ width, marginTop }) => {
   return (
-    <Carousel autoplay adaptiveHeight={true} style={{
-        width: '100%',
-    }} >
-        {
-            projects?.map(project => 
-                <Project key={project.id} project={project} />
-            )
-        }
-    </Carousel>
-  )
-}
+    <Carousel
+      autoplay
+      adaptiveHeight={true}
+      dots={true} // Enable dots for navigation
+      arrows={true} // Enable arrows for navigation
+      style={{
+        width: width,
+        marginTop: marginTop,
+      }}
 
-export default ProjectSection
+    >
+      <HSRT />
+      <PMFME />
+      <FOSTAC />
+    </Carousel>
+  );
+};
+
+// Custom styles for the arrows (optional)
+
+
+export default ProjectSection;

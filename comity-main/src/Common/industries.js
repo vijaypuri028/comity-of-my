@@ -46,22 +46,22 @@ export const industries = [
         "value": 20,
         "label": "Food Safety"
     },
-    {
-        "name": "Skill Development in Industry Sector",
-        "link": "",
-        "desc": "Skill development in the industry sector focuses on equipping individuals with the necessary skills and knowledge to excel in various industrial fields. It encompasses training programs that cover specific industry-related skills and practices, aiming to enhance employability and productivity in industrial settings.",
-        "scheme": "RSLDC: Rajasthan Skill and Livelihoods Development Corporation",
-        "courses": [
-            "Hospitality and Tourism",
-            "Healthcare Services",
-            "Information Technology (IT)",
-            "Construction and Engineering"
-        ],
-        "img": "",
-        "color": "#DC84F3",
-        "value": 20,
-        "label": "Skills"
-    },
+    // {
+    //     "name": "Skill Development in Industry Sector",
+    //     "link": "",
+    //     "desc": "Skill development in the industry sector focuses on equipping individuals with the necessary skills and knowledge to excel in various industrial fields. It encompasses training programs that cover specific industry-related skills and practices, aiming to enhance employability and productivity in industrial settings.",
+    //     "scheme": "RSLDC: Rajasthan Skill and Livelihoods Development Corporation",
+    //     "courses": [
+    //         "Hospitality and Tourism",
+    //         "Healthcare Services",
+    //         "Information Technology (IT)",
+    //         "Construction and Engineering"
+    //     ],
+    //     "img": "",
+    //     "color": "#DC84F3",
+    //     "value": 20,
+    //     "label": "Skills"
+    // },
     {
         "name": "Food Processing Industry",
         "link": "",

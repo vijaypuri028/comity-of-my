@@ -1,7 +1,6 @@
 import React from 'react'
 import TopTemplete from '../Components/utils/TopTemplete'
 import { Box, Typography } from '@mui/material'
-import { capabilityIntro } from '../Common/capabilities'
 import Footer from '../Components/utils/Footer'
 import { lightNavyBg } from '../Common/constants'
 
@@ -33,13 +32,33 @@ function Capabilities() {
         pb: 2
       }
     }}>
-      {
-        capabilityIntro?.map((line) => 
-          <Typography key={line.content}>
-            {line.content}
-          </Typography>
-        )
-      }
+      <Typography variant="h4" sx={{ pb: 4 }}>
+        Our Capabilities
+      </Typography>
+      <Typography sx={{ pb: 3 }}>
+        At Comity Edutech Services Private Limited, operational since 2010, we pride ourselves on our extensive expertise and successful track record in managing government-funded projects from Central & State Governments, PSUs, and Autonomous bodies. Our core competencies include:
+      </Typography>
+      <Typography variant="h5" sx={{ pb: 2 }}>
+        Core Competencies:
+      </Typography>
+      <Typography sx={{ pb: 1 }}>
+        <strong>Skill Development Training:</strong> We provide comprehensive training programs designed to enhance the skill set of individuals, preparing them for various industries.
+      </Typography>
+      <Typography sx={{ pb: 1 }}>
+        <strong>Vocational Education:</strong> Our vocational education programs equip learners with practical skills and knowledge required for specific trades and professions.
+      </Typography>
+      <Typography sx={{ pb: 1 }}>
+        <strong>Corporate Training:</strong> We deliver tailored corporate training sessions aimed at improving employee performance and organizational effectiveness.
+      </Typography>
+      <Typography sx={{ pb: 1 }}>
+        <strong>Placement and Manpower Solutions:</strong> We offer robust placement services and manpower solutions, ensuring the right talent meets the right opportunities.
+      </Typography>
+      <Typography variant="h5" sx={{ pb: 2 }}>
+        Experience and Achievements:
+      </Typography>
+      <Typography>
+        In the last 8 years, we have undertaken numerous assignments in skill development training, focusing on mobilization, placements, and channel management in regions including Delhi-NCR, Rajasthan, Punjab, Madhya Pradesh, and Chhattisgarh.
+      </Typography>
     </Box>
     <Footer />
     </>

@@ -37,8 +37,7 @@ const FourthBlock = ({ goToContact }) => {
             maxWidth: 450,
             textAlign: 'center'
         }} >
-        J-18 , J-Scheme, Bapuji Marg, Sahkar Marg,
-Opp. NAV Back, Jaipur 302005, Rajasthan India
+
 
         </Typography>
 

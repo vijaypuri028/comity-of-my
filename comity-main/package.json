@@ -1,7 +1,7 @@
 {
   "name": "practice_react",
   "version": "0.1.0",
-  "proxy":"https://comity-backend.onrender.com",
+  "proxy": "https://comity-backend.onrender.com",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -14,7 +14,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "antd": "^5.18.3",
+    "antd": "^5.22.5",
     "axios": "^1.7.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
@@ -22,7 +22,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
-    "styled-components": "^6.1.11",
+    "styled-components": "^6.1.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -25,8 +25,8 @@ function Home() {
     <FirstBlock goToContact={goToContact} />
     <ImgCarousel items={items} bgColor={lightNavyBg} />
     <SecondBlock />
-    <ThirdBlock />
-    <ProjectSection />
+    {/* <ThirdBlock /> */}
+    {/* <ProjectSection /> */}
     <FourthBlock goToContact={goToContact} />
     <Footer />
   </>

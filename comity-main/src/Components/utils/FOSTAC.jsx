@@ -2,6 +2,7 @@ import { ArrowForward } from '@mui/icons-material';
 import { Box, Button, Typography, Table, TableBody, TableCell, TableContainer, TableRow, Paper } from '@mui/material';
 import { lightNavyBg } from '../../Common/constants';
 import fostac from "../../Common/images/projectImages/fostac.png";
+import pdf from "../../Common/images/pamphlet/fostacPdf.pdf"
 
 const FOSTAC = () => {
   const project = {
@@ -121,9 +122,11 @@ const FOSTAC = () => {
           </Table>
         </TableContainer>
 
+        <a href={pdf} download="HSRT Pamphlet download">
         <Button variant="outlined" endIcon={<ArrowForward />} size="small" sx={{ alignSelf: 'start' }}>
-          Explore
+          Download
         </Button>
+        </a>
       </Box>
 
       {/* Image Section */}

@@ -1,13 +1,14 @@
 import { Carousel } from 'antd'
 import { Box } from '@mui/material'
 
-const ImgCarousel = ({ items, bgColor }) => {
+const ImgCarousel = ({ items, bgColor, marginY }) => {
   return (
     <Box sx={{
         width: '100%',
         display: 'flex',
         justifyContent: 'center',
         background: bgColor,
+        marginY:marginY,
         paddingInline: {
             xs: 0,
             sm: 6,

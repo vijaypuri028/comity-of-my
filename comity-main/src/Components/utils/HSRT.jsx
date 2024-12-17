@@ -1,9 +1,19 @@
 import { ArrowForward } from '@mui/icons-material';
-import { Box, Button, Typography, Table, TableBody, TableCell, TableContainer, TableRow, Paper } from '@mui/material';
+import { Box, Button, Typography, Table, TableBody,TableHead, TableCell, TableContainer, TableRow, Paper } from '@mui/material';
 import { lightNavyBg } from '../../Common/constants';
+import { Download } from "@mui/icons-material";
 import hsrt from '../../Common/images/projectImages/hsrt.jpg';
-
+import f1 from "../../Files/Annual Taregt 2022-23.xlsx"
+import f2 from "../../Files/Additional Target 2022-23 Data.xlsx"
+import f3 from "../../Files/Annual Target 2023-24.xlsx"
+import f4 from "../../Common/images/pamphlet/WhatsApp Image 2024-12-09 at 18.10.58_48dd704a.jpg"
 const HSRT = () => {
+    const pdfLinks = {
+        pdf1: f1,
+        pdf2: f2,
+        pdf3: f3,
+        pdf4: f4,
+      };
   const project = {
     title: "Hunar Se Rozgar Tak (HSRT)",
     highlights: {
@@ -85,10 +95,11 @@ const HSRT = () => {
             </TableBody>
           </Table>
         </TableContainer>
-
+        <a href={pdfLinks.pdf4} download="HSRT Pamphlet download">
         <Button variant="outlined" endIcon={<ArrowForward />} size="small" sx={{ alignSelf: 'start' }}>
-          Explore
+          Download
         </Button>
+        </a>
       </Box>
 
       {/* Image Section */}
@@ -104,16 +115,78 @@ const HSRT = () => {
           padding: 2,
         }}
       >
-        <img
-          src={project.img}
-          alt={project.title}
-          style={{
-            width: '100%',
-            maxWidth: 400,
-            borderRadius: 8,
-            boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-          }}
-        />
+        
+        <TableContainer sx={{ marginBottom: 2 }}>
+  <Box
+    sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      marginBottom: 2, // Space between the image and table
+    }}
+  >
+    <img
+      src={project.img}
+      alt={project.title}
+      style={{
+        width: '100%',
+        maxWidth: 400,
+        borderRadius: 8,
+        boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+      }}
+    />
+  </Box>
+  
+  <Table>
+    <TableHead>
+      <TableRow>
+        <TableCell sx={{ fontWeight: "bold", color: "#333" }}>
+          Project - Hunar Se Rozgar Tak
+        </TableCell>
+        <TableCell sx={{ fontWeight: "bold", color: "#333" }}>
+          Action
+        </TableCell>
+      </TableRow>
+    </TableHead>
+    <TableBody>
+      <TableRow>
+        <TableCell>Annual Target 2022-23</TableCell>
+        <TableCell>
+          <a href={pdfLinks.pdf1} download="Annual_Target_2022-23">
+            <Button
+              variant="contained"
+              color="primary"
+              startIcon={<Download />}
+            />
+          </a>
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell>Additional Target 2022-23</TableCell>
+        <TableCell>
+          <a href={pdfLinks.pdf2} download="Additional_Target_2022-23">
+            <Button
+              variant="contained"
+              color="primary"
+              startIcon={<Download />}
+            />
+          </a>
+        </TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell>Annual Target 2023-24</TableCell>
+        <TableCell>
+          <a href={pdfLinks.pdf3} download="Annual_Target_2023-24">
+            <Button
+              variant="contained"
+              color="primary"
+              startIcon={<Download />}
+            />
+          </a>
+        </TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
+</TableContainer>
       </Box>
     </Box>
   );

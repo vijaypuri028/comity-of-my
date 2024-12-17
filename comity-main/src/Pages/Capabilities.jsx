@@ -3,6 +3,8 @@ import TopTemplete from '../Components/utils/TopTemplete'
 import { Box, Typography } from '@mui/material'
 import Footer from '../Components/utils/Footer'
 import { lightNavyBg } from '../Common/constants'
+import { itemsSliderCapabilities } from '../Common/CapabilitiesSlider'
+import ImgCarousel from '../Components/utils/ImgCarousel'
 
 function Capabilities() {
   return (
@@ -12,6 +14,7 @@ function Capabilities() {
       title={"Comity Edutech and you"}
       tagLine={"Working together to deliver value to your business."} 
     />
+    <ImgCarousel items={itemsSliderCapabilities} bgColor={lightNavyBg} marginY="30px" />
     <Box sx={{
       background: lightNavyBg,
       paddingBlock: {

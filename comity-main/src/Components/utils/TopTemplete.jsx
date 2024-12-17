@@ -4,12 +4,12 @@ import { darkNavyBg, lightNavyBg } from '../../Common/constants'
 const TopTemplete = ( { background, title, tagLine } ) => {
   return (
     <Box sx={{
-        mt: '70px',
+        // mt: '70px',
         width: '100%',
         height: {
           xs: 400,
           sm: 500,
-          md: 600
+          md: 700
         },
         background: `url(${background})`,
         backgroundSize: 'cover',

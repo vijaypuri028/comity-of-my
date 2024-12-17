@@ -5,6 +5,7 @@ import { lightNavyBg, navyLogoColor } from '../Common/constants'
 import Footer from '../Components/utils/Footer'
 import { useNavigate } from 'react-router-dom'
 import { contactRoute } from '../Common/routes'
+import carrier from "../Common/images/pamphlet/carrier.jpg"
 
 const Carriers = () => {
 
@@ -18,7 +19,7 @@ const Carriers = () => {
   return (
     <>
       <TopTemplete
-        background={"https://cdn.pixabay.com/photo/2016/11/20/09/06/laptop-1842297_1280.jpg"}
+        background={carrier}
         title={"Comity Edutech and you"}
         tagLine={"Working together to deliver value to your business."}
       />
@@ -93,7 +94,7 @@ const Carriers = () => {
           We look forward to welcoming dedicated and passionate professionals to our team!
         </Typography>
       </Box>
-      <Box sx={{
+      {/* <Box sx={{
         width: '100%',
         height: '100vh',
         display: 'flex',
@@ -138,7 +139,7 @@ const Carriers = () => {
         }} >
           Contact Us
         </Button>
-      </Box>
+      </Box> */}
 
       <Footer />
     </>

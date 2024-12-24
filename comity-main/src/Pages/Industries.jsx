@@ -26,7 +26,7 @@ const Industries = () => {
     <ProjectSection marginTop={"80px"} width={"100%"} />
 
 
-    <FirstBlock allShowIndustries={allShowIndustries} />
+    {/* <FirstBlock allShowIndustries={allShowIndustries} /> */}
     {/* <SecondBlock allShowIndustries={allShowIndustries} /> */}
 
     <Footer />

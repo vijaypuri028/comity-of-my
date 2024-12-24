@@ -23,31 +23,37 @@ const TopTemplete = ( { background, title, tagLine } ) => {
           color: lightNavyBg,
           textShadow: '0 0 2px black',
           maxWidth: {
-            xs: '90vw',
-            sm: '75vw',
-            md: '60vw'
+            xs: '80vw',
+            sm: '65vw',
+            md: '50vw'
           },
           paddingBlock: {
-            xs: 2,
-            sm: 5,
-            md: 9
+            xs: 3,
+            sm: 2,
+            md: 5
           },
-          textAlign: 'center'
+          textAlign: 'center',
+          maxHeight:{
+            xs:80,
+            sm:100,
+            md:150
+
+          }
         }} >
           <Typography sx={{
             fontSize: {
-              xs: 34,
-              sm: 40,
-              md: 48
+              xs: 26,
+              sm: 32,
+              md: 40
             }
           }} variant='h3' >
             {title}
           </Typography>
           <Typography variant='h6' sx={{
             fontSize: {
-              xs: 18,
-              sm: 20,
-              md: 22
+              xs: 12,
+              sm: 16,
+              md: 18
             }
           }} >
             {tagLine}

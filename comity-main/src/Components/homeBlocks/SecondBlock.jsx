@@ -115,7 +115,7 @@ const SecondBlock = () => {
                     <Typography sx={{
                         color: navyTextColor
                     }} >
-                    - Vaibhav gupta (Director)
+                    - Vaibhav Gupta (Director)
                     </Typography>
                 </Box>
             </CardContent>
@@ -133,7 +133,7 @@ const SecondBlock = () => {
         </Box>
 
         {/* Chart Section */}
-        <Box sx={{
+        {/* <Box sx={{
             display: 'flex',
             alignItems: 'center',
             width: {
@@ -148,7 +148,7 @@ const SecondBlock = () => {
                 innerRadius={60} 
                 cx={'65%'}
             />
-        </Box>
+        </Box> */}
     </Box>
   )
 }

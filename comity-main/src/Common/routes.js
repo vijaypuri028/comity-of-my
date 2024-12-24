@@ -40,21 +40,21 @@ export const navRoutes = [
         showThis: true
     },
     {
+        name: 'about',
+        path: '/about',
+        title: 'About Us',
+        showThis: true
+    },
+    {
         name: 'ourinitiative',
         path: '/ourinitiative',
-        title: 'Our Initiative',
+        title: 'Initiative',
         showThis: true
     },
     {
         name: 'capabilities',
         path: '/capabilities',
         title: 'Capabilities',
-        showThis: true
-    },
-    {
-        name: 'about',
-        path: '/about',
-        title: 'About Us',
         showThis: true
     },
     {

@@ -1,4 +1,5 @@
 import Home from "../Pages/Home";
+import About from "../Pages/About";
 import Contact from "../Components/utils/Contact";
 import Course from "../Components/utils/Course";
 import Login from "../Pages/Login";
@@ -43,6 +44,7 @@ export const navRoutes = [
         name: 'about',
         path: '/about',
         title: 'About Us',
+        element:About,
         showThis: true
     },
     {

@@ -4,7 +4,9 @@ import logo from "../../Common/images/logos/comityCrop.png";
 import React, { useContext } from "react";
 import SocialMediaContext from "../../context/admin/socialMediaContext";
 import ContactContext from "../../context/admin/contactContext";
-
+import { navRoutes } from '../../Common/routes';
+import { NavLink } from 'react-router-dom';
+// import NavbarContent from '../navbar/NavbarContent';
 // Social Media Photos
 import facebook from "../../Common/images/socialIcons/facebook.png";
 import facebookActive from "../../Common/images/socialIcons/facebookActive.png";
@@ -36,6 +38,7 @@ const Footer = () => {
     getAllSocialMedia();
     getAllContact();
   }, []);
+  // const combinedRoutes = [...navRoutes].filter(route => route.showThis);
 
   return (
     <Box
@@ -127,27 +130,20 @@ const Footer = () => {
                 ":hover": {
                   textDecoration: "underline", // Optional hover style
                   color: navyTextColor, // Changes color on hover
-                  
+
                 },
               },
             },
           }}
         >
-          <ListItem>
-            <Link href="/">Home</Link>
-          </ListItem>
-          <ListItem>
-            <Link href="/about">About Us</Link>
-          </ListItem>
-          <ListItem>
-            <Link href="/ourinitiative">Initiative</Link>
-          </ListItem>
-          <ListItem>
-            <Link href="/capabilities">Capabilities</Link>
-          </ListItem>
-          <ListItem>
-            <Link href="/carriers">Careers</Link>
-          </ListItem>
+          {/* <ListItem>
+            <Link to="/">Home</Link>
+          </ListItem> */}
+          {navRoutes.map((content) => (
+            <ListItem>
+              <NavLink to={content.path}>{content.title}</NavLink>
+            </ListItem>
+          ))}
         </List>
       </Box>
 

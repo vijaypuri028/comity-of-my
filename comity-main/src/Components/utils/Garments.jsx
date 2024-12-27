@@ -1,5 +1,7 @@
-import { ArrowForward } from '@mui/icons-material';
-import { Box, Button, Typography, Table, TableBody, TableCell, TableContainer, TableRow, Paper } from '@mui/material';
+// import { ArrowForward } from '@mui/icons-material';
+import { Box,
+    //  Button,
+     Typography, Table, TableBody, TableCell, TableContainer, TableRow, Paper } from '@mui/material';
 import { lightNavyBg } from '../../Common/constants';
 // import garmentImage from "../../Common/images/projectImages/garmentTraining.png";
 // import pdf from "../../Common/images/pamphlet/garmentTrainingPdf.pdf";
@@ -29,6 +31,7 @@ const Garments = () => {
         width: '100%',
         display: 'flex',
         flexWrap: 'wrap-reverse',
+        marginBottom:"20px",
         background: lightNavyBg,
         paddingInline: {
           xs: 2,

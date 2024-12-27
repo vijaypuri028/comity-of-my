@@ -29,6 +29,7 @@ const FOSTAC = () => {
           sm: 6,
           md: 10,
         },
+        marginBottom:"20px",
         paddingBlock: 4,
         borderRadius: 2,
         boxShadow: "0 4px 10px rgba(0,0,0,0.1)",

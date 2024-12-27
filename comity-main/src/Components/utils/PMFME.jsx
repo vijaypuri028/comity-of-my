@@ -30,6 +30,7 @@ const PMFME = () => {
         display: 'flex',
         flexWrap: 'wrap-reverse',
         background: lightNavyBg,
+        marginBottom:"20px",
         paddingInline: {
           xs: 2,
           sm: 6,

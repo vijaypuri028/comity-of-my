@@ -34,6 +34,8 @@ const HSRT = () => {
           xs: 'column', // Image Section moves to the bottom for mobile
           sm: 'row',           // Side-by-side layout for larger screens
         },
+        marginBottom:"20px",
+        marginTop:"20px",
         background: lightNavyBg,
         paddingInline: {
           xs: 2,

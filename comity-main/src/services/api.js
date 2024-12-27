@@ -1,8 +1,8 @@
 import axios from "axios";
 import { KEY_ACCESS_TOKEN, getItem } from "../utils/localStorageManager";
 
-const BASE_URL = "https://comity-backend.onrender.com";
-// const BASE_URL = "http://localhost:4000";
+// const BASE_URL = "https://comity-backend.onrender.com";
+const BASE_URL = "http://localhost:4000";
 
 axios.interceptors.request.use(req => {
     try {

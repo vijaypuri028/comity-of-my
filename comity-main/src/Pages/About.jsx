@@ -3,7 +3,7 @@ import React, { useContext, useEffect } from "react";
 import Footer from "../Components/utils/Footer";
 import TopTemplete from "../Components/utils/TopTemplete";
 import aboutContext from "../context/admin/aboutContext";
-
+import capability from "../Common/images/capabilities.webp"
 function About() {
   const { aboutMatter, getAllShowAbout } = useContext(aboutContext);
 
@@ -16,7 +16,7 @@ function About() {
       {/* Top Templete */}
       <TopTemplete
         background={
-          "https://cdn.pixabay.com/photo/2015/08/05/13/55/children-876543_1280.jpg"
+          capability
         }
         title={"Comity Edutech and you"}
         tagLine={"Working together to deliver value to your business."}

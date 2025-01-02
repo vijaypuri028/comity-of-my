@@ -132,7 +132,7 @@ const Login = () => {
           </Button>
         </FormControl>
 
-        <Typography
+        {/* <Typography
           sx={{
             pt: 2,
             color: "gray",
@@ -144,7 +144,7 @@ const Login = () => {
         >
           Don't have an account?
           <Link onClick={goToSignup}>Signup</Link>
-        </Typography>
+        </Typography> */}
       </Box>
 
       <Footer />

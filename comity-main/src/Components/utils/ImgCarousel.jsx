@@ -9,6 +9,7 @@ const ImgCarousel = ({ items, bgColor, marginY }) => {
         justifyContent: 'center',
         background: bgColor,
         marginY:marginY,
+        
         paddingInline: {
             xs: 0,
             sm: 6,
@@ -38,12 +39,13 @@ const ImgCarousel = ({ items, bgColor, marginY }) => {
         }
     }}>
 
-    <Carousel autoplay autoplaySpeed={2000} arrows={true} adaptiveHeight={true}  >
+    <Carousel autoplay autoplaySpeed={1500} arrows={true} adaptiveHeight={true}  >
         {
             items?.map(item => 
                 <div style={{background: 'red'}} key={item.id}>
                 <img width={'100%'} height={"inherit"} src={item.src} alt='' style={{
-                    // opacity: 0.5
+                    opacity: 0.8,
+                    filter: 'brightness(70%)',
                 }} />
                 </div>
             )

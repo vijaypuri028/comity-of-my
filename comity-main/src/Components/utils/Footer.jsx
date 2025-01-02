@@ -4,7 +4,7 @@ import logo from "../../Common/images/logos/comityCrop.png";
 import React, { useContext } from "react";
 import SocialMediaContext from "../../context/admin/socialMediaContext";
 import ContactContext from "../../context/admin/contactContext";
-import { navRoutes } from '../../Common/routes';
+import { footerRoutes } from '../../Common/routes';
 import { NavLink } from 'react-router-dom';
 // import NavbarContent from '../navbar/NavbarContent';
 // Social Media Photos
@@ -139,7 +139,7 @@ const Footer = () => {
           {/* <ListItem>
             <Link to="/">Home</Link>
           </ListItem> */}
-          {navRoutes.map((content) => (
+          {footerRoutes.map((content) => (
             <ListItem>
               <NavLink to={content.path}>{content.title}</NavLink>
             </ListItem>

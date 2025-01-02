@@ -66,6 +66,45 @@ export const navRoutes = [
         showThis: true
     },
 ]
+export const footerRoutes = [
+  {
+      name: 'home',
+      path: '/',
+      title: 'Home',
+      showThis: true
+  },
+  {
+      name: 'about',
+      path: '/about',
+      title: 'About Us',
+      element:About,
+      showThis: true
+  },
+  {
+      name: 'ourinitiative',
+      path: '/ourinitiative',
+      title: 'Initiative',
+      showThis: true
+  },
+  {
+      name: 'capabilities',
+      path: '/capabilities',
+      title: 'Capabilities',
+      showThis: true
+  },
+  {
+      name: 'careers',
+      path: '/carriers',
+      title: 'Careers',
+      showThis: true
+  },
+  {
+    name: 'login',
+    path: '/login',
+    title: 'Login',
+    showThis: true
+  }
+]
 
 // Login Signup pages for Admin Pannel Authentication
 export const loginRoute = {

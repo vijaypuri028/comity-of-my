@@ -17,14 +17,26 @@ const FirstBlock = ({ goToContact }) => {
         background: lightNavyBg,
         width: '100%',
         height: 'calc(100vh-70px)',
-        paddingBottom: 18,
+        paddingBottom: {
+            xs: 1,
+            sm: 16,
+            md: 18
+        },
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        gap: 8,
-        position: 'relative',
+        gap: {
+            xs: 1,
+            sm: 6,
+            md: 8
+        },
+        position: 'absolute',
         overflow: 'hidden',
-        mt: '70px',
+        mt: {
+            xs: '10px',
+            sm: '50px',
+            md: '70px'
+        },
         '&:: before': {
             content: '""',
             width: {
@@ -56,8 +68,16 @@ const FirstBlock = ({ goToContact }) => {
 
     const sloganBox = {
         zIndex: 1,
-        mt: 12,
-        paddingBottom: 3,
+        mt: {
+            xs: 10,
+            sm: 11,
+            md: 12
+        },
+        paddingBottom: {
+            sx: 1,
+            sm: 2,
+            md: 3,
+        },
         '& > h1, & > h2, & > h2 > span': {
             fontFamily: '-moz-initial',
         },
@@ -111,40 +131,40 @@ const FirstBlock = ({ goToContact }) => {
         },
         ': hover:: after': {
             width: '16px',
-        },    
+        },
     })
 
-  return (
-    <Box sx={mainBoxStyle}>
-      <Box sx={sloganBox}>
-        <Typography variant='h1' >Collaboratively!</Typography>
-        <Typography variant='h2' ><Typography variant='h2' component='span' color={navyTextColor} >we</Typography> Redefined Parallel Paths</Typography>
-    </Box>
-    <Box sx={{
-        display: 'flex',
-        flexDirection: {
-            xs: 'column',
-            sm: 'row',
-        },
-        alignItems: {
-            xs: 'start',
-            sm: 'center',
-        },
-        gap: '20px',
-        zIndex: 1,
-    }} >
-        <Button sx={btnStyle} onClick={goToContact} size='large' variant="contained">
-            Contact Us
-        </Button>
-        <StyledArrowBtn onClick={goToIndustries} >
-            <Typography>
-            Explore Us
-            </Typography>
-            <ArrowForwardIos color={navyLogoColor} />
-        </StyledArrowBtn>
-    </Box>
-    </Box>
-  )
+    return (
+        <Box sx={mainBoxStyle}>
+            <Box sx={sloganBox}>
+                <Typography variant='h1' style={{color:"white"}} >Collaboratively!</Typography>
+                <Typography variant='h2' style={{color:"white"}}><Typography variant='h2' component='span' color={navyTextColor} >we</Typography > Redefined Parallel Paths</Typography>
+            </Box>
+            <Box sx={{
+                display: 'flex',
+                flexDirection: {
+                    xs: 'row',
+                    sm: 'row',
+                },
+                alignItems: {
+                    xs: 'start',
+                    sm: 'center',
+                },
+                gap: '20px',
+                zIndex: 1,
+            }} >
+                <Button sx={btnStyle} onClick={goToContact} size='large' variant="contained">
+                    Contact Us
+                </Button>
+                <StyledArrowBtn onClick={goToIndustries} >
+                    <Typography>
+                        Explore Us
+                    </Typography>
+                    <ArrowForwardIos color={navyLogoColor} />
+                </StyledArrowBtn>
+            </Box>
+        </Box>
+    )
 }
 
 export default FirstBlock
